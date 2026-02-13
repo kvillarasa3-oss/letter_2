@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Music Player & Letter</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  .letter {
+    background-color: #ffe6f0;
+    border: 2px solid #ff99c8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+</style>
+</head>
+
+<body>
+<h1>🎵 My Music Page</h1>
+
+<button onclick="playMusic()">▶ Play Music</button>
+<button onclick="pauseMusic()">⏸ Pause Music</button>
+
+<!-- Music File -->
+<audio id="mySong" preload="auto">
+  <source src="kkyl.mp3.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Love Letter -->
+<div class="letter">
+  <p>Langga,</p>
+  <p>Everyday I'm soooo thankful for you and all you've done to make my life and world meaningful and brighter. You've held me through tough times and being with me in ups and downs, you loved me with a kindness that feels like home. You're my home. You changed my life for the better, I love you from the bottom of my hypothalamus and more than words can say. Thank you for being you. I love youuuu so so so much and I got you always. Will you be my Valentine?</p>
+</div>
+
+<script>
+function playMusic() {
+  document.getElementById("mySong").play();
+}
+
+function pauseMusic() {
+  document.getElementById("mySong").pause();
+}
+</script>
+
+</body>
+</html>
+
